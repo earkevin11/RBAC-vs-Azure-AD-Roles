@@ -1,4 +1,4 @@
-# RBAC vs Azure AD-Roles
+# Role-Based Access Control (RBAC)
 
 Role-Based Access Control (RBAC) 
   - RBAC is used by IT Adminstrators to assign access to Azure Resources.
@@ -21,16 +21,17 @@ Purpose of RBAC
 
 
 What are the types of roles used for RBAC?
-- Owner: Grants full access to manage all resources, including the ability to assign roles in Azure RBAC.
+- Owner: Grants full access to manage all resources, including the ability to assign or degelate roles to others in Azure.
 - Contributor: Grants full access to manage all resources, but does not allow you to assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries.
 - Reader Role: allows a user to read the resources but user cannot make changes to the resources.
+- User Administrator Role: permission to manage user accesss to Azure resources.
 - And more!
 
 
 
-# How do we assign roles? 
+# How do we assign roles at the Subscription level?
 
-Select your subscription
+Select your <strong> <em> subscription </strong> </em>
 
 <p align="center">
   
@@ -38,7 +39,7 @@ Select your subscription
   
 <p/>
 
-Navigate to Access Control (IAM) - Subscription level
+Navigate to <strong> <em> Access Control (IAM) </em> </strong> - Subscription level
 
 <p align="center">
   
@@ -46,9 +47,11 @@ Navigate to Access Control (IAM) - Subscription level
   
 <p/>
 
-Pick and assign the reader role (Subscription level)
+Pick and assign the <strong> <em> reader role </em> </strong> (Subscription level)
 
-- Since User A was assigned the reader role, it can only read the resource and cannot make changes to the resource or add a role assignment.
+- Since User A was assigned the reader role at the Subscription level, it can only read the resources and cannot make changes to the resource or add a role assignment. <br/>
+- The role will also apply to the resource groups and the resources within the subscription. 
+- <strong> <em> Remember that permissions can be inherited and are limited by scope. </em> </strong>
 
 <p align="center">
   
@@ -57,7 +60,9 @@ Pick and assign the reader role (Subscription level)
 <p/>
 
 
-Select your resource group
+# How do we assign roles at the Resource Group level?
+
+Select your <strong> <em>  resoure group </strong> </em> 
 
 <p align="center">
   
@@ -66,7 +71,9 @@ Select your resource group
 <p/>
 
 
-Pick and assign the contributor role (Resource Group level)
+Pick and assign the <strong> <em>  contributor role </strong> </em>  (Resource Group level)
+- The contributor role assigned to userB will also apply to the resources within the resource group. <br/>
+- <strong> <em> Remember that permissions can be inherited and are limited by scope. </em> </strong>
 
 <p align="center">
   
