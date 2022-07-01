@@ -22,6 +22,7 @@ Purpose of RBAC
 
 What are the types of roles used for RBAC?
 - Owner: Grants full access to manage all resources, including the ability to assign or degelate roles to others in Azure.
+- Example: Owners of a subscription or a resource grp would be able to deploy virtual machines. Global Admins wouldn't be able to deploy unless they owners.
 - Contributor: Grants full access to manage all resources, but does not allow you to assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries.
 - Reader Role: allows a user to read the resources but user cannot make changes to the resources.
 - User Administrator Role: permission to manage user accesss to Azure resources.
