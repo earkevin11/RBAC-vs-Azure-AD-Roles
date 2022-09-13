@@ -1,6 +1,6 @@
 # Role-Based Access Control (RBAC)
 
-Role-Based Access Control (RBAC) 
+# Role-Based Access Control (RBAC) 
   - RBAC is used by IT Adminstrators to assign access to Azure Resources.
 
 <p align="center">
@@ -10,7 +10,7 @@ Role-Based Access Control (RBAC)
 <p/>
 
 
-Purpose of RBAC
+# Purpose of RBAC
 - RBAC provides authorization to your Azure resources such as your storage accounts in your subscription.
 - First step to access a resource, a user must authenticate against Azure AD to verify their identity.
 - Second step, the user must be authorized to use a specific resource. That is where we use RBAC.
@@ -18,9 +18,13 @@ Purpose of RBAC
 - - Subscription Level > Resource Group Level > Resources
 - By default, users do not have access to any resources, so we must assign them certain roles.
 
+# How Azure RBAC works
+- The way you control access to resources using Azure RBAC is to assign Azure roles. This is a key concept to understand – it's how permissions are enforced. A role assignment consists of three elements: security principal, role definition, and scope.
 
+# Security principal
+- A security principal is an object that represents a user, group, service principal, or managed identity that is requesting access to Azure resources. You can assign a role to any of these security principals.
 
-What are the types of roles used for RBAC?
+# What are the types of roles used for RBAC?
 - Owner: Grants full access to manage all resources, including the ability to assign or degelate roles to others in Azure.
 - Example: Owners of a subscription or a resource grp would be able to deploy virtual machines. Global Admins wouldn't be able to deploy unless they owners.
 - Contributor: Grants full access to manage all resources, but does not allow you to assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries.
@@ -40,7 +44,7 @@ Select your <strong> <em> subscription </strong> </em>
   
 <p/>
 
-Navigate to <strong> <em> Access Control (IAM) </em> </strong> - Subscription level
+# Navigate to <strong> <em> Access Control (IAM) </em> </strong> - Subscription level
 
 <p align="center">
   
