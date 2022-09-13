@@ -1,6 +1,6 @@
 # Role-Based Access Control (RBAC)
 
-# Role-Based Access Control (RBAC) 
+# What is Azure RBAC?
   - RBAC is used by IT Adminstrators to assign access to Azure Resources.
 
 <p align="center">
