@@ -24,7 +24,7 @@
 # Security principal
 - A security principal is an object that represents a user, group, service principal, or managed identity that is requesting access to Azure resources. You can assign a role to any of these security principals.
 
-# What are the types of roles used for RBAC?
+# What are the four fundamental Azure roles used for RBAC?
 - Owner: Grants full access to manage all resources, including the ability to assign or degelate roles to others in Azure.
 - Example: Owners of a subscription or a resource grp would be able to deploy virtual machines. Global Admins wouldn't be able to deploy unless they owners.
 - Contributor: Grants full access to manage all resources, but does not allow you to assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries.
